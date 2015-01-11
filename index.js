@@ -3,11 +3,11 @@ var request = require('request');
 function buildJsonResponse(cb) {
     return function(err, res, body) {
         if (err || !body) {
-            cb(err);
+            return cb(err);
         }
         var json = JSON.parse(body);
         if (!json) {
-            cb('Request contains no JSON data');
+            return cb('Request contains no JSON data');
         }
         cb(null, json);
     };
