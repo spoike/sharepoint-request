@@ -1,0 +1,20 @@
+{
+  "name": "sharepoint-request",
+  "version": "0.0.3",
+  "description": "Simple wrapper for sharepoint requests in NodeJS",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "sharepoint",
+    "auth",
+    "api",
+    "request"
+  ],
+  "author": "Mikael Brassman",
+  "license": "MIT",
+  "dependencies": {
+    "request": "^2.51.0"
+  }
+}
