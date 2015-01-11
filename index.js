@@ -9,7 +9,10 @@ function buildJsonResponse(cb) {
         if (!json) {
             return cb('Request contains no JSON data');
         }
-        cb(null, json);
+        if (json.error) {
+            return cb(json.error);
+        }
+        cb(null, json.d);
     };
 }
 
